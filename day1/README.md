@@ -2,7 +2,6 @@
 
 ## Part 1
 
-
 ### Brute Force
 
 The very first idea that should pop up in your head is the brute force way. "Brute forcing" is to not consider efficiency of the algorithm and just have something that works.
