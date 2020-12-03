@@ -18,7 +18,7 @@ The tricky part of this problem is how to deal with the repeating pattern of the
 .#..#...#.#
 ```
 
-The length of characters on each row is 12 meaning if we travel right 13 times, we'd run out of characters. More precisely:
+The length of characters on each row is 11 meaning if we travel right 12 times, we'd run out of characters. More precisely:
 
 ```py
 right_counter = 0
