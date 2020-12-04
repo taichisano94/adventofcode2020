@@ -103,9 +103,6 @@ class Passport:
     else:
       self.passport_id = None
 
-  def revised_is_valid_passport(self):
-    pass  
-
   def __str__(self):
     return f"""Passport(
       birth_year={self.birth_year}, 
