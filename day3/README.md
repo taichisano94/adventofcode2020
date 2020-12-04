@@ -45,7 +45,7 @@ However, this isn't very space efficient. If we consider the secnario that we ne
 
 A more efficient way is to take the modulo of `right_counter` by the length of the line. This will give us the correct index as if the pattern continues forever without actually having to take up space.
 
-If we go back to the first example (`!` denotes where the of `line[right_counter % len(line)]` would be in the list):
+If we go back to the first example (`!` denotes where `line[right_counter % len(line)]` would be in the list):
 
 ```txt
 !.##....... right_counter % len(line) = 0 % 11 = 0 <-- use as index of the line
