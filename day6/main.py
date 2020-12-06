@@ -61,7 +61,7 @@ if __name__ == "__main__":
 
   ## depending on the line ending of the input file,
   ## we might need to add the last item here
-  if answer != "":
+  if len(answer) != 0:
     answers.append(answer)
 
   answer_sum = 0
