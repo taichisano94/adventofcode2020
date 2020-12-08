@@ -13,3 +13,5 @@ We use nested dictionaries in this problem because we want to constantly check a
 ## Part 2
 
 We can use the identical approach, this time instead of checking booleans, we keep count of the quantity. Don't forget the inside bag itself as a single bag; we keep track of this code by adding an additional `quantity` to the bag count.
+
+Note that in both Part 1 and Part 2, the recursive function is prefixed with `_`. In Python, [private functions](https://stackoverflow.com/questions/1020749/what-are-public-private-and-protected-in-object-oriented-programming) aren't natively supported. It is convention to prepend any function that shouldn't be accessed by anything other than itself with `_`. In this case, it doesn't make sense for something other than `BagPolicy` to use a recursive function. Recursive functions can only be used for specific cases so only the class `BagPolicy` itself should have control over when such function should be used.
