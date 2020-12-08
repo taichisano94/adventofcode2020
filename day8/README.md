@@ -30,6 +30,8 @@ elif operation == OperationCode.ACC:
 
 At first glance, the enum code is easier to understand; it's instantly discernible that `operation` is referencing an idea called `OperationCode`. And what if you used the non-enum code in many places and suddenly you find out you misspelled `acc`? The enum keeps your code tidy by having a singular place to manage that information. It reduces copy/paste and repeating code.
 
+I also purposely use tuples to store each line of instructions. I leverage tuple's property of being immutable after creation so that I don't edit the instructions in my code. This prevents bugs involving me unknowingly changing the instructions.
+
 ## Part 2
 
 We _could_ manually edit the input text file one by one until we find the answer we need. Or we can create a helper function to run all the simulation for us. The former sounds tedious and error-prone (we don't trust humans to accurately do mundane, repetitive tasks). We're programmers, we're going to make the computer do it!
