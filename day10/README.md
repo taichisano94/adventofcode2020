@@ -50,9 +50,9 @@ When we draw it out, we can make several observations:
 
 We can go a few different ways here. From observation 1, we can create an algorithm that creates this tree as a data structure and count how many times we see the last adapter value. However, it's still complicated to make this data structure and furthermore, it seems inefficient to count all the branches after all the work we did so let's dig deeper.
 
-Observation 2 is something we've done before; dynamic programming. If we calculate a branch, we probably should store the result the result so that we can just look up the result without having to recalculate it again.
+Observation 2 is something we've done before; dynamic programming. If we calculate a branch, we probably should store the result the result so that we can just look up the result without having to recalculate it again. For example, we see `12 --> 15 --> 16 --> 19 --> 22` repeated a lot. We probably can just say "node 12 leads to a single path" whenever we see 12.
 
-Observation 3 is very interesting; if we take the node of value 7 as an example, you can see that the number of paths that we can take from 7 is actually the same number of paths we can take from node 10. And node 10 is the number of paths we can take from node 11 + number of paths we can take from node 12. Using that same logic, we can see that the number of paths we can take from node 4 is the sum of number of paths we can take from node 5, 6, and 7.
+Observation 3 is an extension of observation 2; if we take the node of value 7 as an example, you can see that the number of paths that we can take from 7 is actually the same number of paths we can take from node 10. And node 10 is the number of paths we can take from node 11 + number of paths we can take from node 12. Using that same logic, we can see that the number of paths we can take from node 4 is the sum of number of paths we can take from node 5, 6, and 7.
 
 In pseudo-code, we can express this roughly like the following:
 
