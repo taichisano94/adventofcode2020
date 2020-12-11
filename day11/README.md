@@ -6,7 +6,7 @@ This problem isn't particularly tricky but rather tedious and requires attention
 
 The first thing I did was to create a class for `Seating` because I realized the seating is going to have some complicated properties and would benefit from having helper functions. In particular, overriding the equality operator to be able to compare whether two instances of `Seating` were the same helped make the code a lot simpler. I also overrode the string operator so that I can visually see what I was doing to the seating chart with each iteration. It's important to make yourself tools to help you better understand the problem and see what's going on in your data structures.
 
-I also broke down the problem into several parts and worked on them in order:
+I broke down the problem into several parts and worked on them in order:
 
 1. Determine a data structure to express the seating chart. This needs to be easy to iterate since we need to go over each seat
 1. Be able to obtain adjacent seats given a row and column index
