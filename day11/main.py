@@ -118,7 +118,7 @@ class Seating:
             new_row += seat
         elif seat == SeatType.OCCUPIED:
           ## count number of occupied seats in adjacent spots
-          ## if more than 4, seat becomes empty
+          ## if more than 5, seat becomes empty
           if los.count(SeatType.OCCUPIED) >= 5:
             new_row += SeatType.EMPTY
           else:
